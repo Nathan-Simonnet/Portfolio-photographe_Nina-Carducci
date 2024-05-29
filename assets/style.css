@@ -1,16 +1,21 @@
+
 @font-face {
 	font-family: 'Spectral-locale';
 	src: url(Font/spectral/Spectral-LightItalic.ttf);
+ font-display: swap;
+ /* swap,optional, fallback */
 }
 
 @font-face {
 	font-family: 'Spectral-locale_bold';
 	src: url(Font/spectral/Spectral-ExtraBoldItalic.ttf);
+ font-display: swap;
 }
 
 @font-face {
 	font-family: 'Inter-locale';
 	src: url(Font/Inter/static/Inter-Regular.ttf);
+ font-display: swap;
 }
 
 body {
