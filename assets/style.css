@@ -95,7 +95,8 @@ body {
 }
 
 #about-me {
-	flex: 2
+	flex: 2;
+	 border: 1px solid red;
 }
 
 .about-me__title {
@@ -290,10 +291,16 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+#nina-img {
+	min-height: auto;
+}
+
 .about-me__introduction {
 	font-size: 1rem;
 }
-
+#about-me{
+	min-height: 30px;
+}
 
 #img-camera {
 	max-width: 26.25rem;
@@ -316,6 +323,10 @@ input[type="submit"] {
 		flex: 2;
 	}
 
+	#about-me{
+		min-height: 400px;
+	}
+
 	#about,
 	#contact .container {
 		align-items: center;
@@ -335,9 +346,10 @@ input[type="submit"] {
 @media all and (max-width: 1000px) {
 	#about {
 		flex-direction: column;
-
 	}
-
+	#about-me{
+		min-height: 300px;
+	}
 	.picture {
 		width: 50%;
 	}
