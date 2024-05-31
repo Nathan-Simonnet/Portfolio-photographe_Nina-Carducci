@@ -20,5 +20,5 @@ Vous êtes développeur freelance et vous décidez de proposer vos services d’
 + Corriger et optimiser l'accessibilité
 
 ## Utilisation
-+ <span style="color:red;">index.html</span> pour ouvrir lancer le site.
++ <span style="color:red;">index.html</span> pour ouvrir le site.
 
