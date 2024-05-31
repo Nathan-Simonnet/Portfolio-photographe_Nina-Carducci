@@ -1,4 +1,4 @@
-# Portfolio-architecte-sophie-bluel
+# Portfolio de photographe - Nina Carducci
 Code du projet 4 du parcours développeur web.
 
 ![Image de Nina Carducci et certaines de ses créations](assets/images/thumbnail_nina-carducci.webp)
