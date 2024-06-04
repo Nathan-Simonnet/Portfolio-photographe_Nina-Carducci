@@ -128,7 +128,6 @@ let eventNotLoaded = true;
         prev.setAttribute('tabindex', '14');
         prev.addEventListener('keydown', (e) => {
           if (e.key == "Enter") {
-            console.log("click!")
             prev.click()
           }
         });
@@ -137,7 +136,6 @@ let eventNotLoaded = true;
         next.setAttribute('tabindex', '15');
         next.addEventListener('keydown', (e) => {
           if (e.key == "Enter") {
-            console.log("click!")
             next.click()
           }
         });
@@ -181,7 +179,6 @@ let eventNotLoaded = true;
           index == -1 ? index = imagesCollection.length - 1 : index;
         }
       });
-      console.log(index)
       next = imagesCollection[index];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -219,7 +216,6 @@ let eventNotLoaded = true;
           index = i + 1;
         }
       });
-      console.log(index)
 
       next = imagesCollection[index] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
@@ -265,7 +261,6 @@ let eventNotLoaded = true;
         link.setAttribute('tabindex', '11');
         link.addEventListener('keydown', (e) => {
           if (e.key == "Enter") {
-            console.log("click!")
             link.click()
           }
         });
@@ -302,7 +297,6 @@ let eventNotLoaded = true;
 document.querySelectorAll('.gallery-item').forEach((img) => {
   img.addEventListener('keydown', (e) => {
     if (e.key == "Enter") {
-      console.log("click!")
       img.click()
     }
   });
