@@ -125,7 +125,7 @@ let eventNotLoaded = true;
       // Modal arrows are now usable for keyboard users
       if (eventNotLoaded == true) {
         const prev = document.querySelector('.mg-prev')
-        prev.setAttribute('tabindex', '14');
+        prev.setAttribute('tabindex', '0');
         prev.addEventListener('keydown', (e) => {
           if (e.key == "Enter") {
             prev.click()
@@ -133,7 +133,7 @@ let eventNotLoaded = true;
         });
 
         const next = document.querySelector('.mg-next')
-        next.setAttribute('tabindex', '15');
+        next.setAttribute('tabindex', '0');
         next.addEventListener('keydown', (e) => {
           if (e.key == "Enter") {
             next.click()
@@ -242,9 +242,9 @@ let eventNotLoaded = true;
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item" tabindex="11"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
+        '<li class="nav-item" tabindex="0"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
       $.each(tags, function (index, value) {
-        tagItems += `<li class="nav-item active" tabindex="12">
+        tagItems += `<li class="nav-item active" tabindex="0">
                 <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
       });
       var tagsRow = `<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;
@@ -258,7 +258,7 @@ let eventNotLoaded = true;
       }
 
       document.querySelectorAll('li.nav-item').forEach((link) => {
-        link.setAttribute('tabindex', '11');
+        link.setAttribute('tabindex', '0');
         link.addEventListener('keydown', (e) => {
           if (e.key == "Enter") {
             link.click()
